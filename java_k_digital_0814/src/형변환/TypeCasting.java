@@ -18,8 +18,7 @@ public class TypeCasting {
             double avg = (double) total / 3; //3도 실수형으로 바뀜
 
             System.out.println(avg);
-            System.out.println(avg);
-            System.out.println(avg);
+
 
         }
 }
