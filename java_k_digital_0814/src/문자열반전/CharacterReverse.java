@@ -14,8 +14,7 @@ public class CharacterReverse {
             while(pos > -1) {
                 System.out.print(input.charAt(pos));
                 pos--;
-            }
-
+             }
            }
         }
 
