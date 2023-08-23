@@ -4,10 +4,10 @@ public class Car {
     int speed;
     String color;
     String name;
-    final void accelerator() { // super은 부모 것을 부름, override는 기능은 안하고 문법적으로 나오는 것
+    void accelerator() { // super은 부모 것을 부름, override는 기능은 안하고 문법적으로 나오는 것
         System.out.println("차의 속도를 증가 시킵니다.");
     }
-    final void breakPanel() {
+    void breakPanel() {
         System.out.println("차의 속도를 감소 시킵니다.");
     }
 }
@@ -19,6 +19,15 @@ class SportsCar extends Car {
         this.name = name;
         this.color = "Red";
     }
+
+    void accelerator() {
+        System.out.println("차의 속도를 200 % 증가 시킵니다.");
+
+    }
+    void breakPanel() {
+        System.out.println("차의 속도를 200 % 감소 시킵니다.");
+    }
+
     int getSpeed() {
         if(isTurbo) return  speed *= 1.2;
         return speed;
