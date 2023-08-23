@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 import static java.lang.Thread.sleep;
+import static 아이패드만들기.Common.*;
 
 public class IpadPro {
     int screen; // 11인치, 12.9인치
@@ -101,10 +102,10 @@ public class IpadPro {
             }
     }
     void productPad() {
-        final String[] screenType = {"", "11인치", "12.9인치"};
-        final String[] colorType = {"", "스페이스그레이", "실버"};
-        final String[] memType = {"", "128GB", "256GB", "512GB", "1TB"};
-        final String[] netType = {"", "wi-fi only", "wi-fi + cellular"};
+//        final String[] screenType = {"", "11인치", "12.9인치"};
+//        final String[] colorType = {"", "스페이스그레이", "실버"};
+//        final String[] memType = {"", "128GB", "256GB", "512GB", "1TB"};
+//        final String[] netType = {"", "wi-fi only", "wi-fi + cellular"};
         System.out.println("=".repeat(5) + "ipad pro 사양" + "=".repeat(5));
         System.out.println("화면 크기 : " + screenType[screen]);
         System.out.println("제품 색상 : " + colorType[color]);
