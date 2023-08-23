@@ -27,7 +27,7 @@ public class KMPEx {
         }
 
         // 3. split()메소드를 이용하는 방법
-        String[] splitName = name.split("-");
+        String[] splitName = name.split("-"); // regex 같은 정규식을 만들 수 있다 -> 패턴을 넣을 수 있다.
         for(String e : splitName) System.out.print(e.charAt(0));
 
         // 4. toCharArray() : 문자열을 문자 배열로 변경
