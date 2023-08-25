@@ -1,0 +1,32 @@
+package 디폴트메서드;
+
+public class Television implements RemoteControl {
+    private int volume;
+    @Override
+    public void turnON() {
+        System.out.println("TV 를 켭니다.");
+    }
+
+    @Override
+    public void turnOFF() {
+        System.out.println("TV 를 끕니다.");
+    }
+
+    @Override
+    public void setVolume(int vol) {
+        if (volume > RemoteControl.MAX_VOLUME) {
+            this.volume = RemoteControl.MAX_VOLUME;
+        } else if (volume < RemoteControl.MIN_VOLUME) {
+            this.volume = RemoteControl.MIN_VOLUME;
+        } else {
+            this.volume = volume;
+        }
+        System.out.println("현재 TV 볼륨 : " + this.volume);
+    }
+
+    @Override
+    public void setMute(boolean mute) {
+        RemoteControl.super.setMute(mute);
+
+    }
+}
