@@ -18,7 +18,7 @@ public class ArraysSearch {
         System.out.println();
         int result = Arrays.binarySearch(arr, key); // 정렬된 배열을 이분 검색 함
         if(result >= 0) {
-            System.out.println(result); // 인덱스가 넘어 옴 //인덱스값으로 계산 0부터 시작
+            System.out.println(result); // 인덱스가 넘어 옴 //인덱스 값으로 계산 0부터 시작
         } else {
             System.out.println("찾는 값이 없습니다.");
         }
