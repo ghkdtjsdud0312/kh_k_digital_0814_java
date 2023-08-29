@@ -26,6 +26,7 @@ public class Member implements Cloneable {
                 cloned = (Member) clone(); // 클론 메소드는 Object 클래스 타입이므로 형변환
             } catch (CloneNotSupportedException e ) {
                 System.out.println(e);
+//                e.printStackTrace();
             }
             return cloned;
         }
