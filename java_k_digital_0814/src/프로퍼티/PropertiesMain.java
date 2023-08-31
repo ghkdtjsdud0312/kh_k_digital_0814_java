@@ -11,7 +11,7 @@ import java.util.Properties;
 public class PropertiesMain {
         public static void main(String[] args) throws IOException { // 예외처리를 통틀어 함
             Properties properties = new Properties();
-            String path = PropertiesMain.class.getResource("./database.properties").getPath();
+            String path = PropertiesMain.class.getResource("../커피메뉴만들기/database.properties").getPath();
             path = URLDecoder.decode(path, "utf-8"); // 문자열에 대해서 디코딩하겠다라는 뜻 한글이 포함되어있으면 8로 디코딩 해줘야함
                                                           // 한글에 대한 처리를 위해서
             properties.load(new FileReader(path));
