@@ -14,7 +14,7 @@ public class HashSetEx2 {
         hashSet.add(member1);
         hashSet.add(member2);
         hashSet.add(member3);
-        hashSet.add(member4);
+        hashSet.add(member4); // 같은 객체 인지 equal() 사용해 확인 한다.
         for(Member e : hashSet) e.showMember();
         // 객체 주소가 다르면 같은 값이여도 중복 제거 안되고 그대로 나옴
         // 중복 제거를 하고 싶으면 오버라이딩을 해야 한다.
@@ -31,9 +31,9 @@ class Member {
 
     @Override
     public boolean equals(Object obj) { // 형변환 해줘야 함
-        if(obj instanceof Member) { //다운캐스팅으로 확인해주기
-            Member member = (Member) obj;
-            if(this.id == member.id) return true;
+        if(obj instanceof Member) { //다운캐스팅이 성립하는지 확인하기 위한 조건
+            Member member = (Member) obj; // 원래 형으로 형변환
+            if(this.id == member.id) return true; //id가 같으면 중복이라고 판별
             else return false;
         }
         return false;
