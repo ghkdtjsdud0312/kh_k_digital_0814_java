@@ -5,6 +5,8 @@ public class ThMain5 {
 
     }
 }
+
+
 class AutoSaveTh extends Thread {
 
 }
