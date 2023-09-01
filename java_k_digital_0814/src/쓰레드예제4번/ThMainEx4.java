@@ -3,7 +3,7 @@ package 쓰레드예제4번;
 import static java.lang.Thread.sleep;
 
 // 쓰레드를 안전하게 종료 하기, stop() 메소드는 사용 중지 됨
-public class ThreadEx4 {
+public class ThMainEx4 {
         public static void main(String[] args) throws InterruptedException {
             RunThread runThread = new RunThread();
             runThread.start();
