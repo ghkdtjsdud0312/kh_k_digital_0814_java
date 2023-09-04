@@ -10,9 +10,7 @@ public class CustomException {
             System.out.println(ce.printEven(num2));
         } catch (EvenException e) {
             e.printStackTrace();
-
         }
-
     }
 }
 class EvenException extends Exception {
